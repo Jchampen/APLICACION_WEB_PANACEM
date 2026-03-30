@@ -1,0 +1,92 @@
+:root {
+    --brand-color: #0d6efd;
+    --brand-soft: #e7f1ff;
+    --section-bg: #f8fafc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+}
+
+main {
+    margin-top: 72px;
+}
+
+.navbar {
+    transition: box-shadow 0.25s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-section {
+    min-height: calc(100vh - 72px);
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.badge-brand {
+    background-color: var(--brand-soft);
+    color: var(--brand-color);
+    font-weight: 600;
+}
+
+.btn-brand {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: #fff;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+    color: #fff;
+}
+
+.hero-card {
+    border: 1px solid #eef2f7;
+}
+
+.section-bg {
+    background-color: var(--section-bg);
+}
+
+.about-box {
+    background-color: #fff;
+    border: 1px solid #eef2f7;
+}
+
+.reveal-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+    main {
+        margin-top: 66px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+}
