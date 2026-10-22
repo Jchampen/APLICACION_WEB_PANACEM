@@ -17,6 +17,40 @@ main {
     margin-top: 72px;
 }
 
+.banner-section {
+    color: #fff;
+    background: linear-gradient(120deg, #0d6efd 0%, #084298 100%);
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 190px;
+    padding: 2.5rem 0;
+}
+
+.banner-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #dbeafe;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    color: #e0ecff;
+}
+
+.banner-content .btn {
+    flex-shrink: 0;
+    color: #084298;
+    font-weight: 600;
+}
+
 .navbar {
     transition: box-shadow 0.25s ease;
 }
@@ -79,6 +113,10 @@ main {
         margin-top: 66px;
     }
 
+    .banner-content {
+        min-height: 170px;
+    }
+
     .hero-section {
         min-height: auto;
         padding: 3rem 0;
@@ -86,6 +124,17 @@ main {
 }
 
 @media (max-width: 575.98px) {
+    .banner-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 2rem 0;
+    }
+
+    .banner-content .btn {
+        width: 100%;
+    }
+
     .display-5 {
         font-size: 2rem;
     }
